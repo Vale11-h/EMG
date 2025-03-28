@@ -63,7 +63,7 @@ Cuando el organismo enfrenta una demanda de esfuerzo sostenido, se desencadena u
 
 Este declive no es simplemente una reducción numérica, sino un complejo proceso de agotamiento celular. Las fibras musculares, inicialmente coordinadas y sincronizadas, comienzan a desorganizarse, generando una señal cada vez más errática e inestable. La representación gráfica de este fenómeno revela una narrativa de resistencia y límite, donde el cuerpo transita desde un estado de máxima potencia hacia una condición de agotamiento progresivo. Cada variación en la intensidad eléctrica cuenta una historia de adaptación, resistencia y eventual rendición fisiológica.
 
-<img src="https://github.com/user-attachments/assets/dc38e07f-2fac-4c8e-b69c-0e8327aacd3c" alt="o" width="200"/>
+![ñ](https://github.com/user-attachments/assets/1eacd998-c744-43af-8365-58b05a992e04)
 > Frecuencia mediana en función del tiempo.
 
  > **Ejes de la Gráfica:**
