@@ -156,3 +156,50 @@ La prueba de hipótesis en el contexto del análisis electromiográfico constitu
  
 Al aplicar la prueba de hipótesis en el análisis del código como último paso del procedimiento, se obtuvo un valor p de 0.4111. Éste sugiere que los cambios que se vieron en las señales de EMG a lo largo de cada contracción hasta llegar a la fatiga muscular no son significativos estadísticamente. Dado que el valor p de 0.4111 es mayor que el nivel de significancia que suele ser usado (0.05), no se rechaza la hipótesis nula. De este modo, no hay evidencia estadística suficiente para asegurar que la fatiga muscular tiene un importante efecto sobre la frecuencia mediana de las señales EMG. En consecuencia, se puede concluir que el protocolo que se implementó para la toma de la señal EMG y los movimientos realizados no produjeron un efecto notable sobre la actividad eléctrica del músculo.
 
+### Instrucciones para la Ejecución del Laboratorio}
+
+**1. Entorno de ejecución:**
+
+El laboratorio se realizó en Google Colab, un entorno basado en la nube que permite ejecutar código Python sin necesidad de configuraciones locales avanzadas.
+
+#### Librerías utilizadas:
+
+Se instalaron y usaron las siguientes librerías en Python:
+
+###### • PyQt5: Para la creación de interfaces gráficas.
+###### • pyqtgraph: Para la visualización de señales en gráficos interactivos.
+###### • numpy: Para operaciones matemáticas y manipulación de arreglos.
+###### • scipy: Para procesamiento de señales (filtros, transformadas, etc.).
+###### • matplotlib: Para generación de gráficos y visualización de datos.
+
+**2. Instalación de librerías en Colab:**
+
+Dado que Google Colab no incluye por defecto PyQt5, se instaló manualmente junto con las demás dependencias necesarias.
+Se utilizó un entorno virtual gráfico para permitir la ejecución de interfaces gráficas en la nube.
+
+**3. Estructura del código:**
+
+• Se definió una interfaz gráfica en PyQt5 con un QMainWindow para cargar y visualizar señales.
+• Se implementó la funcionalidad de carga de archivos en formato txt.
+• Se añadió una sección para aplicar filtros a la señal cargada y visualizar los resultados.
+• Una vez instaladas las dependencias y configurado el entorno gráfico, se ejecuta el código dentro de una celda de Colab.
+
+## Requisitos
+
+• Tener Python 3.9 instalado y utilizar Google Colab (o cualquier compilador compatible).
+
+• Tener acceso a los archivos .dat y .hea para cargar en Google Colab o el compilador elegido.
+
+• Contar con las librerías necesarias instaladas para ejecutar el código correctamente (especificadas en el inicio del artículo).
+
+## Usar
+
+Por favor, cite este artículo:
+
+Huertas, V.; Ramírez, P.; Delgado, A. Análisis estadístico de la señal. 6 de febrero de 2025.
+
+## Información de contacto
+
+• est.laurav.huertas@unimilitar.edu.co
+• est.deisy.aramirez@unimilitar.edu.co
+• est.paulav.gomez@unimilitar.edu.co
