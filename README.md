@@ -50,7 +50,109 @@ Durante el análisis de la actividad muscular, se implementó la ventana de Hamm
 ![k](https://github.com/user-attachments/assets/ccfa3c48-587d-4a8a-b8e2-db27e6a89619)
 > Señal con ventanas.
 
+Posteriormente, se utilizó la Transformada de Fourier para convertir la señal del dominio temporal al dominio de frecuencia. Este algoritmo matemático descompone la señal en sus componentes frecuenciales fundamentales, revelando patrones ocultos de activación neuromuscular que no son perceptibles en el análisis temporal directo. La transformación permite identificar con precisión las frecuencias dominantes y las características espectrales específicas de la contracción muscular. El protocolo estableció una frecuencia de corte de 1000 Hz, lo que garantiza la captura de las señales más relevantes sin perder información crítica. Se procesaron segmentos de 250 milisegundos, completando un total de 24 ventanas que corresponden a las repeticiones del ejercicio hasta alcanzar el punto de fatiga muscular.
+Esta aproximación metodológica permite una descomposición detallada de la señal, aislando y resaltando los momentos más representativos del esfuerzo, y proporcionando una comprensión más profunda de la dinámica de activación muscular.
 
+![y](https://github.com/user-attachments/assets/c1cd35c2-371a-4985-ae66-380f6ed1285b)
+> Convolución por ventana.
 
+### Análisis Espectral
 
+Cuando el organismo enfrenta una demanda de esfuerzo sostenido, se desencadena una cascada de respuestas biológicas. Inicialmente, el sistema neuromuscular despliega una estrategia de máxima eficiencia, movilizando recursos y activando diversos grupos celulares para sostener la tensión requerida.No obstante, esta capacidad de respuesta no es infinita. Gradualmente, se produce una degradación del rendimiento muscular. La respuesta eléctrica experimenta una transformación: desde una señal robusta y expansiva, evoluciona hacia una manifestación más tenue y fragmentada.
+
+Este declive no es simplemente una reducción numérica, sino un complejo proceso de agotamiento celular. Las fibras musculares, inicialmente coordinadas y sincronizadas, comienzan a desorganizarse, generando una señal cada vez más errática e inestable. La representación gráfica de este fenómeno revela una narrativa de resistencia y límite, donde el cuerpo transita desde un estado de máxima potencia hacia una condición de agotamiento progresivo. Cada variación en la intensidad eléctrica cuenta una historia de adaptación, resistencia y eventual rendición fisiológica.
+
+![o](https://github.com/user-attachments/assets/dc38e07f-2fac-4c8e-b69c-0e8327aacd3c)
+> Frecuencia mediana en función del tiempo.
+
+ > **Ejes de la Gráfica:**
+
+> > **-El eje horizontal (Ventanas):** Números de ventanas.
+> > 
+> > **-El eje vertical (Frecuencia [Hz]):** Frecuencias medianas medidas con respecto a las ventanas.
+
+• La frecuencia mediana es un indicador electromiográfico que divide el espectro de potencia de la señal en dos áreas iguales, revelando cambios en la actividad muscular y siendo un parámetro fundamental para evaluar la fatiga y el comportamiento neuromuscular.
+
+• La frecuencia dominante representa el rango de oscilaciones donde se concentra la mayor parte de la energía eléctrica muscular. Es como el "tono principal" de la actividad muscular, el punto donde la señal emite su máxima intensidad y muestra con mayor claridad el comportamiento eléctrico del músculo durante la contracción.
+
+• La frecuencia media es un parámetro estadístico que calcula el promedio de todas las oscilaciones eléctricas presentes en una señal muscular durante un periodo determinado. Funciona como una especie de "centro de gravedad" de las frecuencias, proporcionando una visión general de cómo se distribuyen las vibraciones eléctricas a lo largo del tiempo.
+
+• La desviación estándar es una medida matemática que indica cuánto se alejan las diferentes frecuencias de su valor promedio.
+Una desviación estándar baja sugiere que las frecuencias están muy agrupadas y son uniformes. Una desviación estándar alta indica una gran variabilidad, con frecuencias muy dispersas y menos predecibles.
+
+En esencia, estos parámetros permiten "fotografiar" la actividad eléctrica muscular desde diferentes ángulos, revelando su complejidad y comportamiento dinámico.
+
+> **Datos estadisticos obtenidos por cada ventana:**
+> > **-Ventana 1:** Frecuencia Mediana: 148.00 Hz, Frecuencia Dominante: 124.00 Hz, Frecuencia Media: 164.99 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 2:** Frecuencia Mediana: 220.00 Hz, Frecuencia Dominante: 220.00 Hz, Frecuencia Media: 222.11 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 3:** Frecuencia Mediana: 164.00 Hz, Frecuencia Dominante: 168.00 Hz, Frecuencia Media: 164.57 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 4:** Frecuencia Mediana: 152.00 Hz, Frecuencia Dominante: 152.00 Hz, Frecuencia Media: 174.34 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 5:** Frecuencia Mediana: 148.00 Hz, Frecuencia Dominante: 112.00 Hz, Frecuencia Media: 182.24 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 6:** Frecuencia Mediana: 184.00 Hz, Frecuencia Dominante: 104.00 Hz, Frecuencia Media: 191.83 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 7:** Frecuencia Mediana: 144.00 Hz, Frecuencia Dominante: 140.00 Hz, Frecuencia Media: 177.40 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 8:** Frecuencia Mediana: 184.00 Hz, Frecuencia Dominante: 148.00 Hz, Frecuencia Media: 194.90 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 9:** Frecuencia Mediana: 160.00 Hz, Frecuencia Dominante: 156.00 Hz, Frecuencia Media: 195.25 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 10:** Frecuencia Mediana: 192.00 Hz, Frecuencia Dominante: 188.00 Hz, Frecuencia Media: 202.92 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 11:** Frecuencia Mediana: 240.00 Hz, Frecuencia Dominante: 244.00 Hz, Frecuencia Media: 216.03 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 12:** Frecuencia Mediana: 220.00 Hz, Frecuencia Dominante: 208.00 Hz, Frecuencia Media: 230.65 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 13:** Frecuencia Mediana: 220.00 Hz, Frecuencia Dominante: 252.00 Hz, Frecuencia Media: 217.40 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 14:** Frecuencia Mediana: 200.00 Hz, Frecuencia Dominante: 128.00 Hz, Frecuencia Media: 215.17 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 15:** Frecuencia Mediana: 208.00 Hz, Frecuencia Dominante: 204.00 Hz, Frecuencia Media: 208.01 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 16:** Frecuencia Mediana: 200.00 Hz, Frecuencia Dominante: 304.00 Hz, Frecuencia Media: 210.53 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 17:** Frecuencia Mediana: 212.00 Hz, Frecuencia Dominante: 184.00 Hz, Frecuencia Media: 221.21 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 18:** Frecuencia Mediana: 216.00 Hz, Frecuencia Dominante: 216.00 Hz, Frecuencia Media: 213.18 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 19:** Frecuencia Mediana: 232.00 Hz, Frecuencia Dominante: 248.00 Hz, Frecuencia Media: 217.16 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 20:** Frecuencia Mediana: 216.00 Hz, Frecuencia Dominante: 220.00 Hz, Frecuencia Media: 217.40 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 21:** Frecuencia Mediana: 164.00 Hz, Frecuencia Dominante: 132.00 Hz, Frecuencia Media: 177.50 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 22:** Frecuencia Mediana: 192.00 Hz, Frecuencia Dominante: 108.00 Hz, Frecuencia Media: 189.78 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 23:** Frecuencia Mediana: 152.00 Hz, Frecuencia Dominante: 136.00 Hz, Frecuencia Media: 173.11 Hz, Desviación Estándar: 144.91 Hz
+> > 
+> > **-Ventana 24:** Frecuencia Mediana: 120.00 Hz, Frecuencia Dominante: 116.00 Hz, Frecuencia Media: 159.53 Hz, Desviación Estándar: 144.91 Hz
+
+![P](https://github.com/user-attachments/assets/07fa18db-3297-45dc-b15b-6ad635241ce0)
+> Análisis espectral, por ventanas.
+> **Teniendo en cuenta todas las ventanas:**
+
+> > **-Frecuencia dominante:** 154.00 Hz
+
+> > **-Desviación estándar de las frecuencias medianas:** 32.19 Hz
+
+> > **-Frecuencia media:** 187.00 Hz
+
+![r](https://github.com/user-attachments/assets/7afd5dda-c1fb-42c1-a5f7-7c81c5f8df40)
+> Espectro filtrado de la señal.
+> **Ejes de la Gráfica:**
+> > **-El eje horizontal (Frecuencia [Hz]):** Diferentes frecuencias presentes en la señal.
+
+> > **-El eje vertical (Potencia [dB]):** cantidad de potencia asociada con cada frecuencia.
+
+### PRUEBA DE HIPÓTESIS 
+
+La prueba de hipótesis en el contexto del análisis electromiográfico constituye una herramienta estadística fundamental que permite validar científicamente los cambios observados en la señal muscular. Este método riguroso implica formular una hipótesis nula (que supone ausencia de cambios significativos) y una hipótesis alternativa (que propone la existencia de transformaciones relevantes)
+
+ ###### Valor p de la prueba de hipótesis: 0.4111
+ 
+Al aplicar la prueba de hipótesis en el análisis del código como último paso del procedimiento, se obtuvo un valor p de 0.4111. Éste sugiere que los cambios que se vieron en las señales de EMG a lo largo de cada contracción hasta llegar a la fatiga muscular no son significativos estadísticamente. Dado que el valor p de 0.4111 es mayor que el nivel de significancia que suele ser usado (0.05), no se rechaza la hipótesis nula. De este modo, no hay evidencia estadística suficiente para asegurar que la fatiga muscular tiene un importante efecto sobre la frecuencia mediana de las señales EMG. En consecuencia, se puede concluir que el protocolo que se implementó para la toma de la señal EMG y los movimientos realizados no produjeron un efecto notable sobre la actividad eléctrica del músculo.
 
