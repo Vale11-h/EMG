@@ -1,7 +1,8 @@
-# SEÑALES ELECTROMIOGRÁFICAS EMG
+# Señales electromiográficas EMG
+## Introducción
 La electromiografía (EMG) es una técnica diagnóstica y de investigación que permite evaluar la actividad eléctrica generada por las células musculares durante su contracción, proporcionando información fundamental sobre la función neuromuscular. Mediante electrodos colocados en la piel o insertados directamente en el músculo, este método registra los potenciales de acción de las unidades motoras, lo que permite a los investigadores y profesionales de la salud detectar alteraciones neuromusculares, diagnosticar enfermedades como distrofias musculares, neuropatías periféricas y lesiones de nervios, así como estudiar la respuesta muscular en diferentes condiciones experimentales. En un contexto de laboratorio, la EMG se utiliza tanto para propósitos clínicos como para investigación básica, facilitando la comprensión de los mecanismos de contracción muscular, la coordinación neuromuscular y la evaluación cuantitativa de la función muscular en condiciones normales y patológicas.
 
-### CAPTURA DE LA SEÑAL
+### Captura de la señal.
 
 En primer lugar, para la adquisición de la señal electromiográfica (EMG), se debe preparar adecuadamente al sujeto, asegurando una correcta colocación de los electrodos de superficie sobre el músculo seleccionado, utilizando gel conductor para optimizar la conductividad y minimizar el ruido en la señal. Posteriormente, los electrodos deben conectarse al sistema de adquisición de datos (DAQ), como el NI USB-6001/6002/6003, previa instalación del controlador NI-DAQmx y su API para Python, además de la revisión de la documentación correspondiente.
 
@@ -21,7 +22,7 @@ Captura de EMG con frecuencia de muestreo entre 1000 Hz y 2000 Hz, este valor es
 
 > > Eje de Ordenadas (Amplitud [mV]): este eje cuantifica la magnitud de la señal eléctrica capturada, reflejando la intensidad y el volumen de los potenciales de acción producidos por las diferentes unidades motoras presentes en el tejido muscular.
 
-### FILTRADO DE LA SEÑAL
+### Filtrado de la señal.
 El procesamiento de la señal electromiográfica requirió una estrategia de filtrado sofisticada que combinó un filtro pasa-banda mediante la integración de componentes pasa-alto y pasa-bajo. La metodología implementada se centró en depurar la señal, eliminando frecuencias no deseadas tanto en el espectro superior como inferior.
 
 El diseño contempló un filtro pasa-bajo con una frecuencia de corte de 10 Hz y una atenuación específica de 60 Hz. Posteriormente, se realizó la normalización de la expresión, convirtiendo hercios a radianes por segundo y definiendo la amplitud en decibelios. El análisis determinó un filtro de cuarto orden, fundamentado en el polinomio característico del filtro Butterworth.
@@ -43,7 +44,7 @@ La configuración final estableció un filtro pasa-banda con rangos de frecuenci
 ![h](https://github.com/user-attachments/assets/89791bc4-fe1f-47c8-8734-ea3ba8b96d4d)
 > Señal filtrada.
 
-### AVENTAMIENTO
+### Aventanamiento.
 
 Durante el análisis de la actividad muscular, se implementó la ventana de Hamming, una técnica matemática sofisticada que permite descomponer la señal bioeléctrica con precisión milimétrica. Esta herramienta especializada actúa como un filtro inteligente que suaviza los bordes de la señal, eliminando discontinuidades y reduciendo las interferencias espectrales que pueden distorsionar la información original. La metodología consiste en aplicar la función de Hamming sobre el registro electromiográfico, dividiendo el conjunto de datos en segmentos más pequeños y uniformes. Al multiplicar la señal original por esta función de peso, se logra atenuar las oscilaciones abruptas en los límites de cada intervalo, lo que permite una representación más limpia y precisa de la actividad muscular durante el esfuerzo físico.
 
@@ -62,7 +63,7 @@ Cuando el organismo enfrenta una demanda de esfuerzo sostenido, se desencadena u
 
 Este declive no es simplemente una reducción numérica, sino un complejo proceso de agotamiento celular. Las fibras musculares, inicialmente coordinadas y sincronizadas, comienzan a desorganizarse, generando una señal cada vez más errática e inestable. La representación gráfica de este fenómeno revela una narrativa de resistencia y límite, donde el cuerpo transita desde un estado de máxima potencia hacia una condición de agotamiento progresivo. Cada variación en la intensidad eléctrica cuenta una historia de adaptación, resistencia y eventual rendición fisiológica.
 
-![o](https://github.com/user-attachments/assets/dc38e07f-2fac-4c8e-b69c-0e8327aacd3c)
+<img src="https://github.com/user-attachments/assets/dc38e07f-2fac-4c8e-b69c-0e8327aacd3c" alt="o" width="200"/>
 > Frecuencia mediana en función del tiempo.
 
  > **Ejes de la Gráfica:**
